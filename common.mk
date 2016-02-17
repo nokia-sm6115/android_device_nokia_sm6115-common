@@ -328,4 +328,6 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
-    hostapd
+    hostapd \
+    wpa_supplicant \
+    wpa_supplicant.conf
