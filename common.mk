@@ -115,7 +115,8 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libsdmcore \
-    libsdmutils
+    libsdmutils \
+    libtinyxml2
 
 PRODUCT_PACKAGES += \
     vendor.display.config@2.0.vendor \
