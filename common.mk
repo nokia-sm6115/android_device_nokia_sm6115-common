@@ -3,3 +3,6 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+
+# Namespaces
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
