@@ -138,6 +138,10 @@ PRODUCT_PACKAGES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Fastboot
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
