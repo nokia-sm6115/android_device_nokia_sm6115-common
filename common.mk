@@ -283,3 +283,12 @@ PRODUCT_PACKAGES += \
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
+
+# Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml
