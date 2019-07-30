@@ -273,5 +273,9 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.1-service.multihal
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
