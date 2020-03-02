@@ -285,7 +285,6 @@ PRODUCT_PACKAGES += \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sdio.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qti.chg_policy.sh \
