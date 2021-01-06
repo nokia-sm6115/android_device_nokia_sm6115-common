@@ -313,3 +313,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh
+
+# Vendor service manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
