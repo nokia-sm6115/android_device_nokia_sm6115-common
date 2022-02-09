@@ -150,7 +150,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FM2 \
     qcom.fmradio
-    
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
