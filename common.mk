@@ -171,6 +171,10 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     ipacm
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
