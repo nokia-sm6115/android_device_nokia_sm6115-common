@@ -249,7 +249,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sdio.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
-    init.qcom.usb.sh \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
     init.qti.media.sh \
@@ -262,7 +261,6 @@ PRODUCT_PACKAGES += \
     init.hq.dfx.common.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
-    init.qcom.usb.rc \
     init.qti.ufs.rc \
     init.target.rc \
     init.recovery.qcom.rc
@@ -308,3 +306,10 @@ PRODUCT_BOOT_JARS += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti
+
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/usb/etc
+
+PRODUCT_PACKAGES += \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh
