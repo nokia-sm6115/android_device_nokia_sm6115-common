@@ -24,3 +24,6 @@ TARGET_2ND_CPU_VARIANT := cortex-a9
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := bengal
+
+# Recovery
+TARGET_NO_RECOVERY := false
