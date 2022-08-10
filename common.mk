@@ -24,6 +24,11 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService-Soong \
+    com.dsi.ant@1.0.vendor
+
 # Boot Control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti \
