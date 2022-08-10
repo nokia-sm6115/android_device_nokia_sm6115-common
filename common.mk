@@ -301,7 +301,6 @@ PRODUCT_PACKAGES += \
     fstab.default \
     init.drstrange.rc \
     init.qcom.rc \
-    init.qti.ufs.rc \
     init.target.rc \
     init.recovery.qcom.rc
 
