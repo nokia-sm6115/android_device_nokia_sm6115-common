@@ -207,6 +207,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
