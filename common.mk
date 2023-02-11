@@ -228,6 +228,14 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.0.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    libprotobuf-cpp-full
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.class_main.sh \
