@@ -175,6 +175,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
+# Media
+PRODUCT_PACKAGES += \
+    libmm-omxcore \
+    libOmxCore \
+    libOmxVdec \
+    libOmxVenc \
+    libstagefrighthw \
+    libc2dcolorconvert
+
+PRODUCT_PACKAGES += \
+    libavservices_minijail.vendor
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
