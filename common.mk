@@ -321,3 +321,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:vendor/etc/excluded-input-devices.xml
+
+# Wifi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi-service
