@@ -8,6 +8,8 @@ COMMON_PATH := device/nokia/sm6115-common
 
 include build/make/target/board/BoardConfigMainlineCommon.mk
 
+BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
+
 # A/B
 AB_OTA_UPDATER := true
 
