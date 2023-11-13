@@ -162,6 +162,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.qti
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
