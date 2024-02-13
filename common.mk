@@ -290,7 +290,6 @@ PRODUCT_PACKAGES += \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
     init.qti.media.sh \
-    init.qti.qcv.sh \
     qca6234-service.sh
 
 PRODUCT_PACKAGES += \
