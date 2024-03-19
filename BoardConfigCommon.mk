@@ -6,6 +6,8 @@
 
 COMMON_PATH := device/nokia/sm6115-common
 
+include build/make/target/board/BoardConfigMainlineCommon.mk
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
