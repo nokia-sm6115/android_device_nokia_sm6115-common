@@ -36,6 +36,9 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a9
 
+# HIDL
+DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
+
 # Partitions
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
