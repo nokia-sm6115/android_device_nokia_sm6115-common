@@ -1,0 +1,67 @@
+service hwdiag /vendor/bin/hwdiag
+    class main
+    user root
+    group root system vendor_qti_diag sdcard_rw cache bluetooth drmrpc
+    seclabel u:r:hwdiag:s0
+service diaginsystem /system/bin/wprod action_insystem
+    disabled
+    user root
+    oneshot
+    seclabel u:r:hwdiag:s0
+
+on property:vendor.hq.diaginsystem=1
+   start diaginsystem
+
+on property:vendor.hq.temp=1
+    setprop vendor.hq.boot_end ${sys.boot_completed}
+    setprop vendor.sw.internal.version ${ro.build.display.id}
+    start hqread
+
+service hqread /system/bin/hqread
+    class main
+    user root
+    oneshot
+    group root sdcard_rw everybody
+
+service do_reset /system/bin/hqread do_reset
+    class main
+    user root
+    oneshot
+    group root cache everybody
+    seclabel u:r:hqread:s0
+
+service read_reset /system/bin/hqread read_reset
+    class main
+    user root
+    oneshot
+    group root cache
+    seclabel u:r:hqread:s0
+#ZQL1838 code  by huzhongxiang at 2020/06/28 start
+service install_widevine /system/bin/hqread install_widevine
+    class main
+    user root
+    disabled
+    oneshot
+    group root system
+    seclabel u:r:hqread:s0
+
+on property:vendor.hqread.trigger=1
+    start install_widevine
+#ZQL1838 code  by huzhongxiang at 2020/06/28 end
+on property:vendor.hq.do_factory_reset=1
+    start do_reset
+on property:vendor.hq.read_reset_flag=1
+    start read_reset
+
+
+
+on boot
+    setprop vendor.diag.inp 1
+    start hwdiag
+
+on property:gsm.diag.enable=1
+    setprop sys.diag.enable 1
+on property:sys.diag.enable=1
+    setprop sys.usb.config ${ro.vendor.usb.firstboot.config}
+
+
