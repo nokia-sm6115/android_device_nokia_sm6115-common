@@ -65,12 +65,6 @@ sh_binary {
     vendor: true,
 }
 
-sh_binary {
-    name: "qca6234-service.sh",
-    src: "bin/qca6234-service.sh",
-    vendor: true,
-}
-
 // Init configuration files
 prebuilt_etc {
     name: "init.drstrange.rc",

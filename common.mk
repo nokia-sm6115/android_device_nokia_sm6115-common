@@ -289,8 +289,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
-    init.qti.media.sh \
-    qca6234-service.sh
+    init.qti.media.sh
 
 PRODUCT_PACKAGES += \
     fstab.default \
