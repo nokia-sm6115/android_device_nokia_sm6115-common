@@ -300,7 +300,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.default \
     init.drstrange.rc \
-    init.hq.dfx.common.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.qti.ufs.rc \

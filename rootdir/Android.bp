@@ -74,13 +74,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.hq.dfx.common.rc",
-    src: "etc/init.hq.dfx.common.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.qcom.factory.rc",
     src: "etc/init.qcom.factory.rc",
     sub_dir: "init/hw",
